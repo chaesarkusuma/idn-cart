@@ -242,80 +242,77 @@
     <!-- shop wrapper -->
     <div class="container grid grid-cols-4 pt-4 pb-16 gap-6 items-start">
       <!-- sidebar -->
-      <div class="col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
-        <div class="divide-y divide-gray-200">
+      <div
+        class="col-span-1 bg-white px-4 pb-6 shadow-sm rounded overflow-hidden"
+      >
+        <div class="divide-y divide-gray-300">
           <!-- category filter -->
           <div class="py-5">
-            <h3 class="text-xl text-gray-800my-3 uppercase">Categories</h3>
+            <h3 class="text-xl text-gray-800 my-3 uppercase">categories</h3>
             <div class="space-y-2">
               <!-- single category -->
               <div class="flex items-center">
                 <input
                   type="checkbox"
-                  id="cat-1"
+                  id="category-1"
                   class="text-primary focus:ring-0 rounded-sm cursor-pointer"
                 />
                 <label
-                  for="cat-1"
+                  for="category-1"
                   class="text-gray-600 ml-3 cursor-pointer capitalize"
                   >Sofa</label
                 >
-                <div class="ml-auto text-gray-600 text-sm">(64)</div>
-              </div>
-              <!-- single category end -->
-              <!-- single category -->
-              <div class="flex items-center">
-                <input
-                  type="checkbox"
-                  id="cat-2"
-                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
-                />
-                <label
-                  for="cat-2"
-                  class="text-gray-600 ml-3 cursor-pointer capitalize"
-                  >office</label
-                >
                 <div class="ml-auto text-gray-600 text-sm">(15)</div>
               </div>
-              <!-- single category end -->
               <!-- single category -->
               <div class="flex items-center">
                 <input
                   type="checkbox"
-                  id="cat-3"
+                  id="category-2"
                   class="text-primary focus:ring-0 rounded-sm cursor-pointer"
                 />
                 <label
-                  for="cat-3"
+                  for="category-2"
                   class="text-gray-600 ml-3 cursor-pointer capitalize"
-                  >outdoor cafe</label
+                  >Bedroom</label
                 >
-                <div class="ml-auto text-gray-600 text-sm">(32)</div>
+                <div class="ml-auto text-gray-600 text-sm">(18)</div>
               </div>
-              <!-- single category end -->
               <!-- single category -->
               <div class="flex items-center">
                 <input
                   type="checkbox"
-                  id="cat-4"
+                  id="category-3"
                   class="text-primary focus:ring-0 rounded-sm cursor-pointer"
                 />
                 <label
-                  for="cat-4"
+                  for="category-3"
                   class="text-gray-600 ml-3 cursor-pointer capitalize"
-                  >phone</label
+                  >Outdoor</label
                 >
-                <div class="ml-auto text-gray-600 text-sm">(14)</div>
+                <div class="ml-auto text-gray-600 text-sm">(56)</div>
               </div>
-              <!-- single category end -->
+              <!-- single category -->
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="category-4"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="category-4"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >Electronics</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(83)</div>
+              </div>
             </div>
           </div>
-          <!-- category filter end -->
-          <!-- brands filter -->
+          <!-- brand filter -->
           <div class="py-5">
-            <h3 class="text-xl text-gray-800my-3 uppercase">Categories</h3>
+            <h3 class="text-xl text-gray-800 mb-3 uppercase">Brands</h3>
             <div class="space-y-2">
-              <!-- single category -->
+              <!-- single brand -->
               <div class="flex items-center">
                 <input
                   type="checkbox"
@@ -325,12 +322,11 @@
                 <label
                   for="brand-1"
                   class="text-gray-600 ml-3 cursor-pointer capitalize"
-                  >Sofa</label
+                  >Stone Island</label
                 >
-                <div class="ml-auto text-gray-600 text-sm">(64)</div>
+                <div class="ml-auto text-gray-600 text-sm">(18)</div>
               </div>
-              <!-- single category end -->
-              <!-- single category -->
+              <!-- single brand -->
               <div class="flex items-center">
                 <input
                   type="checkbox"
@@ -340,12 +336,11 @@
                 <label
                   for="brand-2"
                   class="text-gray-600 ml-3 cursor-pointer capitalize"
-                  >office</label
+                  >SNSB</label
                 >
-                <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                <div class="ml-auto text-gray-600 text-sm">(23)</div>
               </div>
-              <!-- single category end -->
-              <!-- single category -->
+              <!-- single brand -->
               <div class="flex items-center">
                 <input
                   type="checkbox"
@@ -355,52 +350,32 @@
                 <label
                   for="brand-3"
                   class="text-gray-600 ml-3 cursor-pointer capitalize"
-                  >outdoor cafe</label
+                  >Stussy</label
                 >
-                <div class="ml-auto text-gray-600 text-sm">(32)</div>
+                <div class="ml-auto text-gray-600 text-sm">(13)</div>
               </div>
-              <!-- single category end -->
-              <!-- single category -->
-              <div class="flex items-center">
-                <input
-                  type="checkbox"
-                  id="brand-4"
-                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
-                />
-                <label
-                  for="brand-4"
-                  class="text-gray-600 ml-3 cursor-pointer capitalize"
-                  >phone</label
-                >
-                <div class="ml-auto text-gray-600 text-sm">(14)</div>
-              </div>
-              <!-- single category end -->
             </div>
           </div>
-          <!-- brands filter end -->
-
           <!-- price filter -->
-          <div class="pt-4">
-            <h3 class="text-xl text-gray-800 mb-3 uppercase">price</h3>
+          <div class="py-5">
+            <h3 class="text-xl text-gray-800 mb-3 uppercase">Price</h3>
             <div class="mt-4 flex items-center">
               <input
                 type="text"
                 class="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-sm shadow-sm rounded"
-                placeholder="min"
+                placeholder="Min"
               />
-              <span class="mx-3 text-gray-500"> - </span>
+              <span class="mx-3 text-gray-500">-</span>
               <input
                 type="text"
                 class="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-sm shadow-sm rounded"
-                placeholder="max"
+                placeholder="Max"
               />
             </div>
           </div>
-          <!-- price filter -->
-
           <!-- size filter -->
-          <div class="pt-4">
-            <h3 class="text-xl text-gray-800 mb-3 uppercase">size</h3>
+          <div class="py-5">
+            <h3 class="text-xl text-gray-800 mb-3 uppercase">Size</h3>
             <div class="flex items-center gap-2">
               <!-- single size -->
               <div class="size-selector">
@@ -411,7 +386,6 @@
                   >XS</label
                 >
               </div>
-              <!-- single size end -->
               <!-- single size -->
               <div class="size-selector">
                 <input type="radio" name="size" class="hidden" id="size-s" />
@@ -421,7 +395,6 @@
                   >S</label
                 >
               </div>
-              <!-- single size end -->
               <!-- single size -->
               <div class="size-selector">
                 <input type="radio" name="size" class="hidden" id="size-m" />
@@ -431,7 +404,6 @@
                   >M</label
                 >
               </div>
-              <!-- single size end -->
               <!-- single size -->
               <div class="size-selector">
                 <input type="radio" name="size" class="hidden" id="size-l" />
@@ -441,7 +413,6 @@
                   >L</label
                 >
               </div>
-              <!-- single size end -->
               <!-- single size -->
               <div class="size-selector">
                 <input type="radio" name="size" class="hidden" id="size-xl" />
@@ -451,7 +422,6 @@
                   >XL</label
                 >
               </div>
-              <!-- single size end -->
             </div>
           </div>
           <!-- size filter end -->
