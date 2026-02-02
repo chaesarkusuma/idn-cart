@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/style.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.0.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-light.css"
+    />
+
+    <title>IDN CART</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="shadow-sm py-4 bg-white">
+      <div class="container flex items-center justify-between">
+        <!-- logo -->
+        <a href="index.html">
+          <img src="public/images/logo.svg" alt="" />
+        </a>
+
+        <!-- searchbar -->
+        <div class="w-full flex max-w-xl relative">
+          <span class="absolute left-4 top-3 text-lg text-gray-400">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input
+            type="text"
+            class="w-full border border-primary border-r-0 pl-12 py-3 rounded-l-md focus:outline-none"
+            placeholder="Search"
+          />
+          <button
+            class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition"
+          >
+            Search
+          </button>
+        </div>
+
+        <!-- icon -->
+        <div class="flex items-center space-x-4">
+          <a
+            href=""
+            class="text-center text-gray-600 hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wishlist</div>
+            <span
+              class="text-xs absolute bg-primary rounded-full text-white flex items-center justify-center w-4 h-4 right-0 -top-0"
+              >8</span
+            >
+          </a>
+          <a
+            href=""
+            class="text-center text-gray-600 hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="text-xs absolute bg-primary rounded-full text-white flex items-center justify-center w-4 h-4 -right-1 -top-0 text"
+              >14</span
+            >
+          </a>
+          <a
+            href=""
+            class="text-center text-gray-600 hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">User</div>
+          </a>
+        </div>
+
+        <!-- header end -->
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- navbar -->
+    <nav class="bg-gray-800">
+      <div class="container flex">
+        <!-- all category -->
+        <div
+          class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group"
+        >
+          <span class="text-white mr-1">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span class="capitalize text-white">All Categories</span>
+          <!-- dropdown -->
+          <div
+            class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 opacity-0 group-hover:opacity-100 transition invisible group-hover:visible"
+          >
+            <!-- single category -->
+            <a
+              class="flex px-6 py-3 items-center hover:bg-gray-100 transition"
+              href=""
+            >
+              <img
+                src="public/images/icons/sofa.svg"
+                class="w-5 h-5 object-contain"
+                alt=""
+              />
+              <span class="text-gray-600 text-sm ml-6 capitalize">sofa</span>
+            </a>
+            <a
+              class="flex px-6 py-3 items-center hover:bg-gray-100 transition"
+              href=""
+            >
+              <img
+                src="public/images/icons/phone.svg"
+                class="w-5 h-5 object-contain"
+                alt=""
+              />
+              <span class="text-gray-600 text-sm ml-6 capitalize">Phone</span>
+            </a>
+            <a
+              class="flex px-6 py-3 items-center hover:bg-gray-100 transition"
+              href=""
+            >
+              <img
+                src="public/images/icons/delivery-van.svg"
+                class="w-5 h-5 object-contain"
+                alt=""
+              />
+              <span class="text-gray-600 text-sm ml-6 capitalize">van</span>
+            </a>
+            <a
+              class="flex px-6 py-3 items-center hover:bg-gray-100 transition"
+              href=""
+            >
+              <img
+                src="public/images/icons/outdoor-cafe.svg"
+                class="w-5 h-5 object-contain"
+                alt=""
+              />
+              <span class="text-gray-600 text-sm ml-6 capitalize"
+                >outdoor cafe</span
+              >
+            </a>
+            <a
+              class="flex px-6 py-3 items-center hover:bg-gray-100 transition"
+              href=""
+            >
+              <img
+                src="public/images/icons/service-hours.svg"
+                class="w-5 h-5 object-contain"
+                alt=""
+              />
+              <span class="text-gray-600 text-sm ml-6 capitalize"
+                >service hours</span
+              >
+            </a>
+            <a
+              class="flex px-6 py-3 items-center hover:bg-gray-100 transition"
+              href=""
+            >
+              <img
+                src="public/images/icons/terrace.svg"
+                class="w-5 h-5 object-contain"
+                alt=""
+              />
+              <span class="text-gray-600 text-sm ml-6 capitalize">terrace</span>
+            </a>
+          </div>
+        </div>
+        <!-- all category end -->
+        <!-- nav link -->
+        <div class="flex justify-between pl-12 items-center flex-grow">
+          <div class="flex space-x-6">
+            <a
+              class="text-gray-300 hover:text-white transition"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-gray-300 hover:text-white transition"
+              href="shop.html"
+              >Shop</a
+            >
+            <a
+              class="text-gray-300 hover:text-white transition"
+              href="about.html"
+              >About us</a
+            >
+            <a
+              class="text-gray-300 hover:text-white transition"
+              href="contact.html"
+              >contact us</a
+            >
+          </div>
+          <div class="space-x-6">
+            <a class="text-gray-300 hover-text transition" href="login.html"
+              >Login</a
+            >
+            <a class="text-gray-300 hover-text transition" href="register.html"
+              >Register</a
+            >
+          </div>
+        </div>
+        <!-- nav link end -->
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- breadcumb -->
+    <div class="container flex items-center py-4 gap-3">
+      <a class="taxt-base text-primary" href="index.html">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <span class="text-sm text-gray-400">
+        <i class="fa-solid fa-chevron-right"></i>
+      </span>
+      <a href="shop.html" class="text-primary text-base">
+        <span>Shop</span>
+      </a>
+      <span class="text-gray-400 text-sm">
+        <i class="fa-solid fa-chevron-right"></i>
+      </span>
+      <p class="text-gray-600 font-medium capitalize">checkout</p>
+    </div>
+    <!-- breadcumb end -->
+
+    <!-- checkout wrapper -->
+    <div class="container grid grid-cols-12 gap-6 pb-16 items-start pt-4">
+      <!-- checkout form -->
+      <div class="col-span-8 border border-gray-200 p-4 rounded shadow-sm">
+        <h3 class="uppercase text-xl tracking-widest font-semibold mb-5">
+          checkout
+        </h3>
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label for="firstname" class="text-gray-600 mb-2 block"
+                >First name <span class="text-primary">*</span></label
+              >
+              <input
+                id="firstname"
+                type="text"
+                name=""
+                class="input-box"
+                placeholder="Chaesar"
+              />
+            </div>
+            <div>
+              <label for="lastname" class="text-gray-600 mb-2 block"
+                >Last name <span class="text-primary">*</span></label
+              >
+              <input
+                id="lastname"
+                type="text"
+                name=""
+                class="input-box"
+                placeholder="Kusuma"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="companyname" class="text-gray-600 mb-2 block"
+              >Company name</label
+            >
+            <input
+              id="companyname"
+              type="text"
+              name=""
+              class="input-box"
+              placeholder="Doe"
+            />
+          </div>
+          <div>
+            <label for="Country" class="text-gray-600 mb-2 block"
+              >Country/Region <span class="text-primary">*</span></label
+            >
+            <input
+              id="Country"
+              type="text"
+              name=""
+              class="input-box"
+              placeholder="Doe"
+            />
+          </div>
+          <div>
+            <label for="Street" class="text-gray-600 mb-2 block"
+              >Street Address <span class="text-primary">*</span></label
+            >
+            <input
+              id="Street"
+              type="text"
+              name=""
+              class="input-box"
+              placeholder="Doe"
+            />
+          </div>
+          <div>
+            <label for="citi" class="text-gray-600 mb-2 block"
+              >Town/City <span class="text-primary">*</span></label
+            >
+            <input
+              id="citi"
+              type="text"
+              name=""
+              class="input-box"
+              placeholder="Doe"
+            />
+          </div>
+          <div>
+            <label for="zip" class="text-gray-600 mb-2 block"
+              >ZIP Code <span class="text-primary">*</span></label
+            >
+            <input
+              id="zip"
+              type="text"
+              name=""
+              class="input-box"
+              placeholder="Doe"
+            />
+          </div>
+          <div>
+            <label for="phone" class="text-gray-600 mb-2 block"
+              >Phone Number <span class="text-primary">*</span></label
+            >
+            <input
+              id="phone"
+              type="number"
+              name=""
+              class="input-box"
+              placeholder="Doe"
+            />
+          </div>
+          <div>
+            <label for="email" class="text-gray-600 mb-2 block"
+              >Email Address <span class="text-primary">*</span></label
+            >
+            <input
+              id="email"
+              type="email"
+              name=""
+              class="input-box"
+              placeholder="Doe"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- checkout form end -->
+      <!-- checkout cart -->
+      <div class="col-span-4 border border-gray-200 p-4 rounded shadow-sm">
+        <h3 class="uppercase text-xl tracking-widest font-semibold mb-5">
+          Order summary
+        </h3>
+        <div class="space-y-2">
+          <div class="flex justify-between">
+            <div class="">
+              <h5 class="text-gray-800 font-medium capitalize">
+                Italian Shape Sofa
+              </h5>
+              <p class="text-sm text-gray-600">Size: M</p>
+              <div class="flex items-center">
+                <p class="text-sm text-gray-600 mr-1.5">Color:</p>
+                <span
+                  class="rounded-xs w-3 h-3 bg-primary block border shadow"
+                ></span>
+              </div>
+            </div>
+            <p class="text-gray-600">x3</p>
+            <p class="text-gray-800 font-medium">Rp 150.000</p>
+          </div>
+          <div class="flex justify-between">
+            <div class="">
+              <h5 class="text-gray-800 font-medium capitalize">Gaming table</h5>
+              <p class="text-sm text-gray-600">Size: L</p>
+              <div class="flex items-center">
+                <p class="text-sm text-gray-600 mr-1.5">Color:</p>
+                <span
+                  class="rounded-xs w-3 h-3 bg-black block border shadow"
+                ></span>
+              </div>
+            </div>
+            <p class="text-gray-600">x2</p>
+            <p class="text-gray-800 font-medium">Rp.973.000</p>
+          </div>
+          <div class="flex justify-between">
+            <div class="">
+              <h5 class="text-gray-800 font-medium capitalize">
+                aeshtetic bed
+              </h5>
+              <p class="text-sm text-gray-600">Size: M</p>
+              <div class="flex items-center">
+                <p class="text-sm text-gray-600 mr-1.5">Color:</p>
+                <span
+                  class="rounded-xs w-3 h-3 bg-white block shadow border"
+                ></span>
+              </div>
+            </div>
+            <p class="text-gray-600">x4</p>
+            <p class="text-gray-800 font-medium">Rp.1.000.000</p>
+          </div>
+          <div
+            class=" mt-4 flex justify-between border-b border-gray-200 font-medium pb-3 uppercase"
+          >
+            <p class="text-gray-800 font-medium uppercase">Sub total</p>
+            <p class="text-gray-800 font-medium uppercase">Rp 2.123.000</p>
+          </div>
+          <div
+            class="flex justify-between border-b border-gray-200 font-medium pb-3 uppercase"
+          >
+            <p class="text-gray-800 font-medium uppercase">Shipping</p>
+            <p class="text-gray-800 font-medium uppercase">FREE</p>
+          </div>
+          <div
+            class="flex justify-between font-medium pb-3 uppercase"
+          >
+            <p class="text-gray-800 font-bold uppercase">Total</p>
+            <p class="text-gray-800 font-bold uppercase">Rp 2.123.000</p>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="mr-3 rounded-sm text-primary focus:ring-0" />
+            <p class="text-gray-500 text-xs">Agree to our <span class="text-primary">terms & conditions</span></p>
+          </div>
+          <div>
+            <button class="bg-primary w-full py-3 rounded uppercase text-white cursor-pointer border border-primary hover:bg-transparent hover:text-primary mt-2">place order</button>
+          </div>
+        </div>
+      </div>
+      <!-- checkout cart end -->
+    </div>
+    <!-- checkout wrapper end -->
+
+    <!-- footer -->
+    <footer class="bg-white pt-6 pb-12 border-t border-gray-200">
+      <div class="container grid grid-cols-3 gap-8">
+        <!-- footer text -->
+        <div class="col-span-1 space-y-8">
+          <img class="" src="public/images/logo.svg" alt="" />
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            alias.
+          </p>
+          <div class="flex space-x-6">
+            <a href="" class="text-gray-400 hover:text-gray-500">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="" class="text-gray-400 hover:text-gray-500">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="" class="text-gray-400 hover:text-gray-500">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="" class="text-gray-400 hover:text-gray-500">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <!-- footer text end -->
+        <!-- footer links -->
+        <div class="col-span-2 grid grid-cols-2 gap-8">
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <h3
+                class="text-sm font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Solutions
+              </h3>
+              <div class="mt-4 space-y-4">
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Marketing</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Analycics</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Commerce</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Insight</a
+                >
+              </div>
+            </div>
+            <div>
+              <h3
+                class="text-sm font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Support
+              </h3>
+              <div class="mt-4 space-y-4">
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Documentation</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Guides</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Pricing</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Api Status</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <h3
+                class="text-sm font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Company
+              </h3>
+              <div class="mt-4 space-y-4">
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >About</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Blog</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Jobs</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Press</a
+                >
+              </div>
+            </div>
+            <div>
+              <h3
+                class="text-sm font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Legal
+              </h3>
+              <div class="mt-4 space-y-4">
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Claim</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Privacy</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Policy</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Terms</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- copyright -->
+    <div class="bg-gray-800 py-4">
+      <div class="container flex items-center justify-between">
+        <p class="text-white">
+          Copyright &copy; 2026 All Rights Reserved | IDN Cart
+        </p>
+        <img class="h-5" src="public/images/methods.png" alt="" />
+      </div>
+    </div>
+    <!-- copyright end -->
+  </body>
+</html>
