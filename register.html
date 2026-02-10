@@ -16,101 +16,201 @@
   </head>
 
   <body>
-    <!-- Header -->
-    <header class="container py-4 shadow-sm bg-white flex justify-between items-center space-x-6">
-      <div class="flex items-center justify-between">
+    <!-- header -->
+    <header class="shadow-sm py-4 bg-white">
+      <div class="container flex items-center justify-between">
         <!-- logo -->
-         <a href="index.html">
-          <img src="public/images/logo.svg" alt="IDN-CART Logo">
-         </a>
-      </div>
+        <a href="index.html">
+          <img src="public/images/logo.svg" alt="" />
+        </a>
 
-      <!-- search bar -->
-      <div class="w-full max-w-xl relative flex">
-        <span class="absolute left-4 top-3 text-lg text-gray-400">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </span>
-        <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none focus:ring-0" placeholder="Search"/>
-        <a href="shop.html" class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition justify-center flex items-center cursor-pointer">Search</a>
-      </div>
+        <!-- searchbar -->
+        <div class="w-full flex max-w-xl relative">
+          <span class="absolute left-4 top-3 text-lg text-gray-400">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input
+            type="text"
+            class="w-full border border-primary border-r-0 pl-12 py-3 rounded-l-md focus:outline-none"
+            placeholder="Search"
+          />
+          <button
+            class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition"
+          >
+            Search
+          </button>
+        </div>
 
-      <!-- icons -->
-      <div class="flex items-center space-x-4">
-        <a href="wishlist.html" class="text-center text-gray-700 hover:text-primary transition relative">
-          <div class="text-2xl">
-            <i class="fa-regular fa-heart"></i>
-          </div>
-          <div class="text-xs leading-3">Wishlist</div>
-          <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
-        </a>
-        <a href="checkout.html" class="text-center text-gray-700 hover:text-primary transition relative">
-          <div class="text-2xl">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-          <div class="text-xs leading-3">Cart</div>
-          <span class="absolute left-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">3</span>
-        </a>
-        <a href="account.html" class="text-center text-gray-700 hover:text-primary transition relative">
-          <div class="text-2xl">
-            <i class="fa-solid fa-user"></i>
-          </div>
-          <div class="text-xs leading-3">Account</div>
-        </a>
+        <!-- icon -->
+        <div class="flex items-center space-x-4">
+          <a
+            href="wishlist.html"
+            class="text-center text-gray-600 hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wishlist</div>
+            <span
+              class="text-xs absolute bg-primary rounded-full text-white flex items-center justify-center w-4 h-4 right-0 -top-0"
+              >8</span
+            >
+          </a>
+          <a
+            href="checkout.html"
+            class="text-center text-gray-600 hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="text-xs absolute bg-primary rounded-full text-white flex items-center justify-center w-4 h-4 -right-1 -top-0 text"
+              >14</span
+            >
+          </a>
+          <a
+            href="account.html"
+            class="text-center text-gray-600 hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">User</div>
+          </a>
+        </div>
+
+        <!-- header end -->
       </div>
     </header>
+    <!-- header end -->
 
-    <!-- Navbar -->
+    <!-- navbar -->
     <nav class="bg-gray-800">
       <div class="container flex">
-        <!-- All category -->
-        <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
-          <span class="text-white">
+        <!-- all category -->
+        <div
+          class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group"
+        >
+          <span class="text-white mr-1">
             <i class="fa-solid fa-bars"></i>
           </span>
-          <span class="capitalize ml-2 text-white">All Categories</span>
-          <!-- Dropdown -->
-          <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
-            <a class="flex px-6 py-3 items-center hover:bg-gray-200 transition">
-              <img src="public/images/icons/sofa.svg" class="w-5 h-5 object-contain" alt="">
-              <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+          <span class="capitalize text-white">All Categories</span>
+          <!-- dropdown -->
+          <div
+            class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 opacity-0 group-hover:opacity-100 transition invisible group-hover:visible"
+          >
+            <!-- single category -->
+            <a
+              class="flex px-6 py-3 items-center hover:bg-gray-100 transition"
+              href=""
+            >
+              <img
+                src="public/images/icons/sofa.svg"
+                class="w-5 h-5 object-contain"
+                alt=""
+              />
+              <span class="text-gray-600 text-sm ml-6 capitalize">sofa</span>
             </a>
-            <a class="flex px-6 py-3 items-center hover:bg-gray-200 transition">
-              <img src="public/images/icons/bed.svg" class="w-5 h-5 object-contain" alt="">
-              <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+            <a
+              class="flex px-6 py-3 items-center hover:bg-gray-100 transition"
+              href=""
+            >
+              <img
+                src="public/images/icons/phone.svg"
+                class="w-5 h-5 object-contain"
+                alt=""
+              />
+              <span class="text-gray-600 text-sm ml-6 capitalize">Phone</span>
             </a>
-            <a class="flex px-6 py-3 items-center hover:bg-gray-200 transition">
-              <img src="public/images/icons/office.svg" class="w-5 h-5 object-contain" alt="">
-              <span class="ml-6 text-gray-600 text-sm">Office</span>
+            <a
+              class="flex px-6 py-3 items-center hover:bg-gray-100 transition"
+              href=""
+            >
+              <img
+                src="public/images/icons/delivery-van.svg"
+                class="w-5 h-5 object-contain"
+                alt=""
+              />
+              <span class="text-gray-600 text-sm ml-6 capitalize">van</span>
             </a>
-            <a class="flex px-6 py-3 items-center hover:bg-gray-200 transition">
-              <img src="public/images/icons/terrace.svg" class="w-5 h-5 object-contain" alt="">
-              <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+            <a
+              class="flex px-6 py-3 items-center hover:bg-gray-100 transition"
+              href=""
+            >
+              <img
+                src="public/images/icons/outdoor-cafe.svg"
+                class="w-5 h-5 object-contain"
+                alt=""
+              />
+              <span class="text-gray-600 text-sm ml-6 capitalize"
+                >outdoor cafe</span
+              >
             </a>
-            <a class="flex px-6 py-3 items-center hover:bg-gray-200 transition">
-              <img src="public/images/icons/phone.svg" class="w-5 h-5 object-contain" alt="">
-              <span class="ml-6 text-gray-600 text-sm">Electronics</span>
+            <a
+              class="flex px-6 py-3 items-center hover:bg-gray-100 transition"
+              href=""
+            >
+              <img
+                src="public/images/icons/service-hours.svg"
+                class="w-5 h-5 object-contain"
+                alt=""
+              />
+              <span class="text-gray-600 text-sm ml-6 capitalize"
+                >service hours</span
+              >
             </a>
-            <a class="flex px-6 py-3 items-center hover:bg-gray-200 transition">
-              <img src="public/images/icons/restaurant.svg" class="w-5 h-5 object-contain" alt="">
-              <span class="ml-6 text-gray-600 text-sm">Dining</span>
+            <a
+              class="flex px-6 py-3 items-center hover:bg-gray-100 transition"
+              href=""
+            >
+              <img
+                src="public/images/icons/terrace.svg"
+                class="w-5 h-5 object-contain"
+                alt=""
+              />
+              <span class="text-gray-600 text-sm ml-6 capitalize">terrace</span>
             </a>
           </div>
         </div>
-        <!-- Nav links -->
-        <div class="flex justify-between pl-12 items-center grow">
+        <!-- all category end -->
+        <!-- nav link -->
+        <div class="flex justify-between pl-12 items-center flex-grow">
           <div class="flex space-x-6">
-            <a class="text-gray-300 hover:text-white" href="index.html">Home</a>
-            <a class="text-gray-300 hover:text-white" href="shop.html">Shop</a>
-            <a class="text-gray-300 hover:text-white" href="about.html">About Us</a>
-            <a class="text-gray-300 hover:text-white" href="contact.html">Contact Us</a>
+            <a
+              class="text-gray-300 hover:text-white transition"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-gray-300 hover:text-white transition"
+              href="shop.html"
+              >Shop</a
+            >
+            <a
+              class="text-gray-300 hover:text-white transition"
+              href="about.html"
+              >About us</a
+            >
+            <a
+              class="text-gray-300 hover:text-white transition"
+              href="contact.html"
+              >contact us</a
+            >
           </div>
-          <div class="flex space-x-6">
-            <a class="text-gray-300 hover:text-white" href="login.html">Login</a>
-            <a class="text-gray-300 hover:text-white" href="register.html">Register</a>
+          <div class="space-x-6">
+            <a class="text-gray-300 hover-text transition" href="login.html"
+              >Login</a
+            >
+            <a class="text-gray-300 hover-text transition" href="register.html"
+              >Register</a
+            >
           </div>
         </div>
+        <!-- nav link end -->
       </div>
     </nav>
+    <!-- navbar end -->
 
     <!-- register form -->
     <div class="container py-16">
