@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
+@plugin "@tailwindcss/forms";
 
 @theme {
   /* breakpoint */
@@ -15,7 +16,7 @@
   --font-roboto: "Roboto", sans-serif;
 
   /* colors */
-  --color-primary: #fd3d57;
+  --color-primary: #ff0000;
   --color-secondary: #1e1e1e;
 }
 
@@ -27,6 +28,27 @@
   }
 }
 
+@layer components {
+  .size-selector input:checked + label {
+    @apply bg-primary text-white;
+  }
+  .color-selector input:checked + label {
+    @apply ring-2  ring-primary;
+  }
+.input-box {
+    @apply block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:ring-0 placeholder-gray-300;
+  }
+}
+
 body {
   font-family: var(--font-Poppins);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-roboto);
 }
